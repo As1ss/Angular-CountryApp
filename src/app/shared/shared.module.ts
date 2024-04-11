@@ -1,0 +1,38 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { FormsModule } from '@angular/forms';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
+import { SearchBoxComponent } from './components/search-box/shared-search-box.component';
+import { SidebarComponent } from './components/sidebar/shared-sidebar.component';
+
+
+
+@NgModule({
+  declarations: [
+    AboutPageComponent,
+    ContactPageComponent,
+    HomePageComponent,
+    LoadingSpinnerComponent,
+    SearchBoxComponent,
+    SidebarComponent,
+  ],
+  imports: [
+    CommonModule,
+    RouterModule,
+    FormsModule
+  ],
+  exports:[
+    AboutPageComponent,
+    ContactPageComponent,
+    HomePageComponent,
+    LoadingSpinnerComponent,
+    SearchBoxComponent,
+    SidebarComponent,
+  ]
+})
+export class SharedModule { }

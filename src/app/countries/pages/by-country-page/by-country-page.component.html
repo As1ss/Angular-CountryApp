@@ -1,0 +1,24 @@
+<h2>Por País</h2>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <shared-search-box
+      placeholder="Introduce la capital..."
+      (messageDebounce)="searchByCountryPage($event)"
+      [initialValue]="initialValue"
+    ></shared-search-box>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <hr />
+
+    <ng-container *ngIf="isLoading">
+      <shared-loading-spinner></shared-loading-spinner>
+    </ng-container>
+
+    <countries-table [countries]="countries"></countries-table>
+  </div>
+</div>

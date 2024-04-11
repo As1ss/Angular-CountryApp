@@ -1,0 +1,61 @@
+<div #normal *ngIf="country; else alert">
+  <div class="row">
+    <div class="col-12">
+      <h2>País: <b>{{country.name.common}}</b></h2>
+      <hr>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <h3>Bandera</h3>
+      <img [src]="country.flags.svg" [alt]="country.name.common" class="img-thumbnail">
+    </div>
+    <div class="col">
+      <h3>Información</h3>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <b>Población:</b> {{country.population | number}}
+        </li>
+        <li class="list-group-item">
+          <b>Código: </b>{{country.cca2}}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-2">
+    <div class="col">
+      <h3>Traducciones</h3>
+      <div class="d-flex flex-wrap">
+        <span class="badge bg-primary m-1">{{ country.translations['spa'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['ara'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['fra'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['jpn'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['bre'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['ces'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['cym'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['deu'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['est'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['fin'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['hrv'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['hun'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['ita'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['tur'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['urd'].common }}</span>
+        <span class="badge bg-primary m-1">{{ country.translations['zho'].common }}</span>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<ng-template #alert>
+  <div class="alert alert-info text-center">
+    <span class="text-info">Espere por favor...</span>
+  </div>
+</ng-template>
