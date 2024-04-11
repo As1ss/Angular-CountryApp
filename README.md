@@ -1,27 +1,14 @@
 # CountryApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+![image](https://github.com/As1ss/Angular-CountryApp/assets/123207726/50b8c856-cf7a-478a-8c99-541bc5f5e31c)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![image](https://github.com/As1ss/Angular-CountryApp/assets/123207726/7f85f297-2504-482d-8494-19e80f18664e)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+![image](https://github.com/As1ss/Angular-CountryApp/assets/123207726/aa46b306-453f-4712-960c-ee3010af576c)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+https://as1ss.github.io/Angular-CountryApp/countries/by-region
