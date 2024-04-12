@@ -11,4 +11,5 @@
 
 
 
-https://as1ss.github.io/Angular-CountryApp/countries/by-region
+
+https://as1ss.github.io/Angular-CountryApp/
